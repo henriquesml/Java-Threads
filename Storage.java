@@ -2,7 +2,7 @@ public class Storage {
   private String[] data = new String[100];
   private int count = 0;
 
-  public void addData(String info){
+  public synchronized void addData(String info){
     data[count] = info;
     count++;
   }
